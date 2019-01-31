@@ -249,13 +249,13 @@ header, footer {
       font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
-      padding-top: 16px;
-      padding-bottom: 22px;
-      border-top: 3px solid transparent;
+      padding-top: 19px;
+      padding-bottom: 16px;
+      border-bottom: 3px solid transparent;
       -webkit-transition: border-top 0.2s linear;
       transition: border-top 0.2s linear; }
       .menu__list > li > a:hover {
-        border-top: 3px solid #f16d7f; }
+        border-bottom: 3px solid #f16d7f; }
 
 .store-banner {
   background-color: #e8e8e8; }
@@ -336,6 +336,143 @@ header, footer {
       color: #f16d7f;
       letter-spacing: 0.75px;
       font-weight: 900; }
+
+.featured-items {
+  margin-top: 100px; }
+  .featured-items__header-title {
+    text-align: center;
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.75px; }
+  .featured-items__header-description {
+    margin-top: 16px;
+    text-align: center;
+    color: #9f9f9f;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.35px; }
+  .featured-items__container {
+    margin-top: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .featured-items__item {
+    margin-top: 39px;
+    width: 261px;
+    text-decoration: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: -webkit-box-shadow 0.2s linear;
+    transition: -webkit-box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear;
+    transition: box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear; }
+    .featured-items__item:hover {
+      text-decoration: none;
+      -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+              box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+  .featured-items__item-name {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .featured-items__item-price {
+    margin-top: 17px;
+    margin-bottom: 21px;
+    margin-left: 15px;
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .featured-items__browse-all-products-btn {
+    display: block;
+    margin: 58px auto 0;
+    background-color: #f16d7f;
+    border: 1px solid transparent;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .featured-items__browse-all-products-btn:hover {
+      background-color: #ffffff;
+      color: #f16d7f;
+      border: 1px solid #f16d7f; }
+
+.advantages {
+  margin-top: 113px; }
+  .advantages > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #222224;
+    padding: 0; }
+    .advantages > .container > .discount-offer {
+      width: 767px;
+      height: 529px;
+      background: url("../img/main-page/advantages/background.jpg"); }
+
+.discount-offer {
+  position: relative; }
+  .discount-offer__header {
+    position: absolute;
+    z-index: 2;
+    top: 146px;
+    left: 39px; }
+
+.discount-offer__title {
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+  .discount-offer__title_red-text {
+    color: #f16d7f;
+    letter-spacing: 1.5px; }
+  .discount-offer__title_small-text {
+    font-size: 32px;
+    letter-spacing: 0.9px;
+    weight: 700;
+    color: #ffffff; }
+
+.advantages__container {
+  width: 375px; }
+
+.advantages__item-description-title {
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px; }
+
+.advantages__item-description-text {
+  margin-top: 17px;
+  width: 219px;
+  color: #fbfbfb;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.35px; }
 
 /*media */
 @media screen and (max-width: 1142px) {

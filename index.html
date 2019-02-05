@@ -23,12 +23,77 @@
                 <button class="browse-dropdown" id="browseDropDown">Browse<i class="fas fa-caret-down"></i></button>
                 <input type="text" placeholder="Search for item..." class="searchfield-input">
                 <button type="submit" class="searchBtn"><i class="fas fa-search"></i></button>
+                <nav class="header__search-form-dropdown-menu">
+                    <div class="square"></div>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-title">Women</li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Dresses</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Tops</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Sweaters/Knits</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Jackets/Coats</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Blazers</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Denim</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Leggings/Pants</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Skirts/Shorts</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Accessories</a></li>
+                    </ul>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-list-title">Men</li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Tees/Tank tops</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Shirts/Polos</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Sweaters</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Sweatshirts/Hoodies</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Blazers</a></li>
+                        <li class="dropdown-item"><a href="#" class="dropdown-link">Jackets/vests</a></li>
+                    </ul>
+                </nav>
             </form>
         </div>
         <div class="header__right">
             <div class="header__cart">
                 <img src="img/header/cart.svg" alt="product cart">
-                <span class="cart-value" id="cartValue"></span>
+                <span class="cart-value" id="cartValue">0</span>
+                <div class="header__cart-dropdown">
+                    <div class="square"></div>
+                    <div class="header__cart-dropdown-cart-item">
+                        <a href="#" class="header__cart-dropdown-item-link">
+                        <img src="img/header/cart__dropdown/00.jpg" alt="cart item icon">
+                        <div class="header__cart-dropdown-cart-item-description">
+                            <h3 class="header__cart-dropdown-item-title">Rebox Zane</h3>
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <p class="header__cart-dropdown-price"><span class="header-dropdown-price-quantity">1</span> x <span>$250</span></p>
+                        </div>
+                        </a>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <div class="header__cart-dropdown-cart-item">
+                        <a href="#" class="header__cart-dropdown-item-link">
+                            <img src="img/header/cart__dropdown/01.jpg" alt="cart item icon">
+                            <div class="header__cart-dropdown-cart-item-description">
+                                <h3 class="header__cart-dropdown-item-title">Rebox Zane</h3>
+                                <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                                <p class="header__cart-dropdown-price"><span class="header-dropdown-price-quantity">1</span> x <span>$250</span></p>
+                            </div>
+                        </a>
+                        <button class="header__cart-dropdown-delete-from-cart-btn"><i class="fas fa-times-circle"></i></button>
+                    </div>
+                    <p class="header__cart-dropdown-total-amount"><span>TOTAL</span><span id="totalAmount">$500.00</span></p>
+                    <a href="#" class="header__dropdown-cart-proceed-your-order-link">checkout</a>
+                    <a href="#" class="header__dropdown-cart-proceed-your-order-link">go to cart</a>
+                </div>
+
             </div>
             <button class="my-account-dropdown" id="myAccountDropDown">My Account<i class="fas fa-caret-down"></i>
             </button>

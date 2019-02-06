@@ -284,7 +284,11 @@ header, footer {
 
 .header__cart {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px; }
+  .header__cart:hover .header__cart-dropdown {
+    display: block; }
 
 .cart-value {
   width: 19px;
@@ -297,7 +301,7 @@ header, footer {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.3px;
-  display: block;
+  display: none;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -307,7 +311,8 @@ header, footer {
   cursor: auto;
   border: 1px solid rgba(0, 0, 0, 0.08);
   position: absolute;
-  top: 45px;
+  left: -16px;
+  top: 50px;
   z-index: 2;
   padding-left: 15px;
   padding-right: 15px;
@@ -319,7 +324,7 @@ header, footer {
   border-radius: 5px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-  display: block; }
+  display: none; }
   .header__cart-dropdown > .square {
     left: 26px; }
 
@@ -506,7 +511,19 @@ header, footer {
           justify-content: space-between; }
 
 .special-offer__banner {
-  position: relative; }
+  position: relative;
+  display: block;
+  overflow: hidden; }
+  .special-offer__banner > img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+    .special-offer__banner > img:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .special-offer__banner_big {
     width: 560px;
     height: 542px; }
@@ -516,6 +533,7 @@ header, footer {
   .special-offer__banner:not(:first-child) {
     margin-top: 20px; }
   .special-offer__banner > h2 {
+    z-index: 3;
     position: absolute;
     left: 0;
     top: 26px;

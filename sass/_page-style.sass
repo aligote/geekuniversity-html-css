@@ -564,6 +564,7 @@ header,footer
     height: 438px
     background:
         repeat: no-repeat
+        size: cover
     & > .container
         display: flex
         justify-content: space-around
@@ -730,5 +731,147 @@ header,footer
         font-weight: 400
         letter-spacing: 0.4px
 
-    
 
+/*single page styles*/
+.name-of-page
+    background-color: #f8f3f4
+    & > .container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        color: #f16d7f
+        font-family: $lato-font
+        font-size: 24px
+        font-weight: 900
+        line-height: 20px
+        text-transform: uppercase
+        line-height: 130px
+    &__breadcrumbs
+        color: #636363
+        font-family: $lato-font
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        font-weight: 300
+        & > span
+            font-weight: 700
+            color: #f16d7f
+.slider
+    background-color: #f7f7f7
+    border: 1px solid #eaeaea
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    &__button
+        padding: 16px
+        color: #ffffff
+        font-size: 14px
+        font-weight: 400
+        border: none
+        background-color: #cccccc
+        transition: background-color .2s linear
+        &:hover
+            background-color: #2a2a2a
+
+.description-of-good
+    margin-top: -50px
+    & > .container
+        position: relative
+        z-index: 2
+        background-color: #ffffff
+        padding-top: 73px
+        padding-left: 260px
+        padding-right: 260px
+        padding-bottom: 122px
+        box-sizing: border-box
+        border: 1px solid #eaeaea
+    &__category
+        display: table
+        margin: 0 auto
+        padding-bottom: 15px
+        color: #f16d7f
+        text-align: center
+        font-family: $lato-font
+        font-size: 14px
+        font-weight: 700
+        text-transform: uppercase
+        border-bottom: 1px solid #cccccc
+    &__title
+        margin-top: 17px
+        color: #4d4d4d
+        text-align: center
+        font-family: $lato-font
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+        text-transform: uppercase
+    &__text
+        margin: 67px auto 0
+        color: #5e5e5e
+        font-family: $lato-font
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+    &__material-designer-info
+        display: flex
+        justify-content: center
+        margin-top: 28px
+        & > p
+            color: #b9b9b9
+            font-family: $lato-font
+            font-size: 14px
+            font-weight: 700
+            line-height: 24px
+            text-transform: uppercase
+            &:not(:first-child)
+                margin-left: 44px
+            & > span
+                color: #2f2f2f
+    &__total-amount
+        text-align: center
+        color: #ef5b70
+        font-family: $lato-font
+        font-size: 24px
+        font-weight: 700
+        line-height: 24px
+        padding-bottom: 43px
+        border-bottom: 1px solid #eaeaea
+        margin: 37px auto 0
+    &__add-to-cart-btn
+        display: block
+        width: 100%
+        margin: 28px auto 0
+        border: 1px solid #ef5b70
+        background-color: #ffffff
+        color: #ef5b70
+        font-family: $lato-font
+        font-size: 16px
+        font-weight: 700
+        line-height: 55px
+        transition: all .2s linear
+        &:hover
+            background-color: #ef5b70
+            color: #ffffff
+    &__add-to-cart-form
+        padding-left: 53px
+        padding-right: 52px
+.parameter__square
+    width: 12px
+    height: 12px
+    display: inline-block
+    &_red
+        background-color: red
+
+.you-may-like-also
+    margin-top: 119px
+    &__title
+        color: #4d4d4d
+        font-family: $lato-font
+        font-size: 24px
+        font-weight: 700
+        line-height: 20px
+        text-transform: uppercase
+        text-align: center

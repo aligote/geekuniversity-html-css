@@ -145,11 +145,33 @@
             </div>
             <p class="description-of-good__total-amount">$<span id="totalAmount">561</span></p>
             <form action="#" typeof="submit" class="description-of-good__add-to-cart-form">
-                <div class="parameter">
-                    <p class="parameter__title">CHOOSE COLOR</p>
-                    <input type="checkbox" id="redColor">
-                    <label for="redColor"><span class="parameter__square parameter__square_red"></span> RED</label>
+                <div class="parameters__container">
+                    <div class="parameter">
+                        <p class="parameter__title">CHOOSE COLOR</p>
+                        <select name="choose-color" class="parameter__select-color">
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                    <div class="parameter">
+                        <p class="parameter__title">CHOOSE SIZE</p>
+                        <select name="choose-color" class="parameter__select-color">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xs">XS</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                            <option value="xxxl">XXXL</option>
+                        </select>
+                    </div>
+                    <div class="parameter">
+                        <p class="parameter__title">QUANTITY</p>
+                        <input type="number" min="1" max="100" value="1" class="parameter__input-quantity">
+                    </div>
                 </div>
+
                 <button class="description-of-good__add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Add to Cart
                 </button>
             </form>

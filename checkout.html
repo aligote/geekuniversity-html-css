@@ -125,36 +125,63 @@
         </div>
     </div>
     <div class="checkout container">
-        <details open="open">
+        <details open="open" class="checkout__details">
             <summary class="checkout-summary">01. Shipping Adress</summary>
-            <form action="#" class="checkout-form guest-or-register-form">
-                <h2 class="checkout-form__title">Check as a guest or register</h2>
-                <p class="checkout-form__description">Register with us for future convenience</p>
-                <input type="radio" name="what-is-your-checkout-status">
-                <input type="radio" name="what-is-your-checkout-status">
-                <h2 class="checkout-form__title">register and save time!</h2>
-                <p class="checkout-form__description">Register with us for future convenience</p>
-                <p class="checkout-form__description checkout-form__description_margin">>>Fast and easy checkout</p>
-                <p class="checkout-form__description">>>Easy access to your order history and status</p>
-                <button type="submit" class="checkout-form__btn">Continue</button>
-            </form>
-            <form action="#" class="checkout-form already-registered-sign-in"></form>
+            <div class="checkout__container">
+                <form action="#" class="checkout-form guest-or-register-form">
+                    <h2 class="checkout-form__title">Check as a guest or register</h2>
+                    <p class="checkout-form__description">Register with us for future convenience</p>
+                    <div class="checkout-form__radio">
+                        <input type="radio" name="what-is-your-checkout-status" id="checkoutAsGuest"
+                               class="checkout-form__input-radio">
+                        <label for="checkoutAsGuest" class="checkout-form__label-for-radio"></label>
+                        <span><label for="checkoutAsGuest">checkout as guest</label></span>
+                    </div>
+                    <div class="checkout-form__radio">
+                        <input type="radio" name="what-is-your-checkout-status" id="checkoutRegister"
+                               class="checkout-form__input-radio">
+                        <label for="checkoutRegister" class="checkout-form__label-for-radio">
+                        </label>
+                        <span><label for="checkoutRegister">register</label></span>
+                    </div>
+                    <h2 class="checkout-form__title">register and save time!</h2>
+                    <p class="checkout-form__description">Register with us for future convenience</p>
+                    <p class="checkout-form__description checkout-form__description_margin"><i
+                            class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
+                    <p class="checkout-form__description"><i class="fas fa-angle-double-right"></i>Easy access to your
+                        order history and status</p>
+                    <button type="submit" class="contact-details__form-btn checkout-form__btn">Continue</button>
+                </form>
+                <form action="#" class="checkout-form already-registered-sign-in">
+                    <h2 class="checkout-form__title">Already registed?</h2>
+                    <p class="checkout-form__description">Please log in below</p>
+                    <p class="checkout-form__title checkout-form__input-title">EMAIL ADDRESS<span>*</span></p>
+                    <input type="text" class="contact-details__input checkout-form__input" placeholder="@mail">
+                    <p class="checkout-form__title checkout-form__input-title">Password<span>*</span></p>
+                    <input type="password" class="contact-details__input checkout-form__input" placeholder="Password">
+                    <p class="checkout-form__title checkout-form__input-title checkout-form__input-title_by-red-color">*
+                        Required Fileds</p>
+                    <button type="submit" class="contact-details__form-btn checkout-form__btn">Log in</button>
+                    <a href="#" class="checkout-form__link">Forgot Password?</a>
+                </form>
+            </div>
+
 
         </details>
-        <details>
-            <summary>02. Billing information</summary>
+        <details class="checkout__details">
+            <summary class="checkout-summary">02. Billing information</summary>
         </details>
-        <details>
-            <summary>03. Shipping information</summary>
+        <details class="checkout__details">
+            <summary class="checkout-summary">03. Shipping information</summary>
         </details>
-        <details>
-            <summary>04. Shipping method</summary>
+        <details class="checkout__details">
+            <summary class="checkout-summary">04. Shipping method</summary>
         </details>
-        <details>
-            <summary>05. payment method</summary>
+        <details class="checkout__details">
+            <summary class="checkout-summary">05. payment method</summary>
         </details>
-        <details>
-            <summary>06. order review</summary>
+        <details class="checkout__details">
+            <summary class="checkout-summary">06. order review</summary>
         </details>
     </div>
     <article class="feedback-and-subscribe">

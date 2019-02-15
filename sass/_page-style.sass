@@ -6,7 +6,8 @@ header,footer
     margin: 0 auto
     padding-left: 10px
     padding-right: 10px
-
+.margin-top-0
+    margin-top: 0px!important
 /*Main page*/
 .header
     margin-top: 25px
@@ -1139,4 +1140,201 @@ header,footer
     display: flex
     justify-content: space-between
 
+/*Product page styles*/
+.product-page-content
+    margin-top: 59px
+    display: flex
+    align-items: flex-start
+.product-page__side-bar
+    width: 238px
+    & summary
+        width: 100%
+        border-left: 5px solid #f16d7f
+        border-bottom: 1px solid #ebebeb
+        -webkit-box-sizing: border-box
+            box-sizing: border-box
+        color: #6f6e6e
+        font-size: 14px
+        font-weight: 700
+        line-height: 37px
+        outline: none
+        text-transform: uppercase
+        padding-left: 12px
+        display: block
+        &::-webkit-details-marker
+            display: none
+        &::after
+            content: '\25BC'
+            font-size: 12px
+            float: right
+    & details[open] summary
+        color: #f16d7f
+    & details[open] summary::after
+        content: '\25B2'
+        color: #f16d7f
+    &-list
+        list-style-type: none
+        padding-top: 22px
+        padding-left: 22px
+        padding-bottom: 41px
+        & > li > a
+            color: #6f6e6e
+            font-size: 14px
+            font-weight: 400
+            line-height: 33px
+            text-decoration: none
+            &:hover
+                text-decoration: underline
+.product-page__goods
+    width: 100%
+    margin-left: 55px
+.select-your-product
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__item
+        flex: 1
+        min-height: 100px
+        & h3
+            text-transform: uppercase
+            font-size: 14px
+            line-height: 20px
+            color: #6f6e6e
+            text-align: left
+        & ul
+            display: flex
+            justify-content: flex-start
+            &>li>a
+                font-size: 14px
+                line-height: 26px
+                padding-right: 10px
+                padding-left: 10px
+                text-decoration: none
+                color: #6f6e6e
+                border-right: 1px solid #6f6e6e
+                &:hover
+                    color: $red-color
+                    text-decoration: none
+                    border-color: $red-color
+            &>li:first-child a
+                padding-left: 0
+            &>li:last-child a
+                border: none
+.product-item__content
+    margin-top: 25px
+.select-your-size
+    display: flex
+    flex-direction: column
+    min-height: 46px
+    justify-content: space-between
+.select-your-size__container
+    display: flex
+    justify-content: space-between
+    max-width: 215px
+.size
+    display: flex
+    flex-direction: row
+    align-items: center
+    & .size__type-of
+        margin-left: 9px
+        font-size: 14px
+        line-height: 20px
+        text-transform: uppercase
+        color: #6f6e6e
+        border: none
+    & input[type="checkbox"]
+        display: none
+        &:checked + label:before
+            content: "\2713"
+            font-size: 15px
+            color: #000
+            text-align: center
+            line-height: 15px
+    & label
+        width: 13px
+        height: 13px
+        border: 1px solid #ebebeb
 
+#slider
+    width: 100%
+    height: 6px
+    margin-top: 25px
+/* Контейнер слайдера */
+.ui-slider
+    position: relative
+/* Ползунок */
+.ui-slider .ui-slider-handle
+    position: absolute
+    z-index: 10
+    width: 14px
+    height: 14px
+    border-radius: 14px
+    cursor: pointer
+    background-color: $red-color
+    outline: none
+.ui-slider .ui-slider-range
+    position: absolute
+    z-index: 10
+    font-size: .7em
+    display: block
+    border: none
+    overflow: hidden
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal
+    height: 6px
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle
+    top: -5px
+    margin-left: -7px
+.ui-slider-horizontal .ui-slider-range
+    top: 0
+    height: 100%
+.ui-slider-horizontal .ui-slider-range-min
+    left: 0
+.ui-slider-horizontal .ui-slider-range-max
+    right: 0
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content
+    background: #f0f0f0
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header
+    border: none
+    background: #f16d7f
+    height: 6px
+/* скругление для полосы слайдера */
+.ui-corner-all
+    -moz-border-radius: 4px
+    -webkit-border-radius: 4px
+    border-radius: 4px
+.slider-values
+    display: flex
+    justify-content: space-between
+    & input
+        margin-top: 18px
+        border: none
+        outline: none
+        max-width: 33px
+        font-size: 14px
+        line-height: 26px
+        color: #6f6e6e
+    & label
+        font-size: 14px
+        line-height: 26px
+        color: #6f6e6e
+.product-page__goods-items-container
+    margin-top: 8px
+.product-page__advantages
+    background-color: #222224
+    padding:
+        top: 89px
+        bottom: 114px
+    & > .container
+        justify-content: space-between
+    & .advantages__item
+        flex-direction: column
+        align-items: center
+    & .advantages__item-description
+        text-align: center
+        margin-top: 32px
+        margin-left: 0

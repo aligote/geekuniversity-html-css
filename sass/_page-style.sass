@@ -459,6 +459,8 @@ header,footer
             weight: 700
         text-transform: uppercase
     &__browse-all-products-btn
+        max-width: 164px
+        text-decoration: none
         display: block
         margin: 58px auto 0
         background-color: $red-color
@@ -546,12 +548,13 @@ header,footer
         repeat: no-repeat
         size: cover
     & > .container
+        height: 100%
         display: flex
         justify-content: space-around
+        align-items: center
 .feedback
     display: flex
     align-items: flex-start
-    padding-top: 111px
     &__description
         margin-left: 28px
     &__description-text
@@ -579,7 +582,6 @@ header,footer
         letter-spacing: 0.3px
         line-height: 14px
 .subscribe
-    padding-top: 148px
     &__title
         text:
             align: center
